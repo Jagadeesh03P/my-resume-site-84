@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Eye, Camera, Shield, Mail, Clock } from "lucide-react";
+import { Eye, Camera, Shield, Mail, Clock, BookUser } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -30,6 +30,21 @@ const Projects = () => {
       ],
       technologies: ["IoT", "Sensors", "Microcontroller", "Real-time Systems"],
       color: "accent",
+    },
+    {
+      title: "Contact Management System",
+      icon: BookUser,
+      description: "Command-line address book application with file persistence and advanced sorting",
+      features: [
+        "Complete CRUD Operations: Create, Read, Update, and Delete contacts with name, phone, and email",
+        "Advanced Sorting: Sort contacts by name, phone number, or email address",
+        "File Persistence: Automatic saving and loading of contacts from CSV file",
+        "Search Functionality: Search contacts by name, phone, or email with partial matching",
+        "Data Validation: Input validation for phone numbers and email addresses",
+        "Memory Efficient: Optimized data structures for handling up to 100 contacts",
+      ],
+      technologies: ["C", "File I/O", "CSV", "Data Structures", "Algorithms"],
+      color: "primary",
     },
   ];
 
