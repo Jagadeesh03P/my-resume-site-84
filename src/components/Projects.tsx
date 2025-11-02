@@ -32,7 +32,7 @@ const Projects = () => {
       color: "accent",
     },
     {
-      title: "Contact Management System",
+      title: "Address Book",
       icon: BookUser,
       description: "Command-line address book application with file persistence and advanced sorting",
       features: [
