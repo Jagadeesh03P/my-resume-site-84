@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Eye, Camera, Shield, Mail, Clock, BookUser } from "lucide-react";
+import { Eye, Camera, Shield, Mail, Clock, BookUser, ImageOff } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -45,6 +45,21 @@ const Projects = () => {
       ],
       technologies: ["C", "File I/O", "CSV", "Data Structures", "Algorithms"],
       color: "primary",
+    },
+    {
+      title: "LSB Steganography",
+      icon: ImageOff,
+      description: "Secure data hiding system using Least Significant Bit steganography in BMP images",
+      features: [
+        "LSB Encoding: Hide secret data inside BMP images by modifying least significant bits",
+        "Data Extraction: Decode and extract hidden data from steganographic images",
+        "File Format Support: Works with BMP image format and text files",
+        "Magic String Validation: Verify if image contains hidden data using magic string",
+        "Capacity Checking: Ensures image has sufficient capacity before encoding",
+        "Dual Mode Operation: Command-line interface for both encoding and decoding operations",
+      ],
+      technologies: ["C", "Image Processing", "Cryptography", "File I/O", "Bit Manipulation"],
+      color: "accent",
     },
   ];
 
